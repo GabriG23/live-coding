@@ -24,3 +24,7 @@ Ecco un po' di comandi base:
 - `poetry add nome_libreria`: aggiunge un nuovo pacchetto, per esempio poetry add numpy per aggiungere numpy oppyre poetry add --dev black per aggiungere una serie di librerie per programmare
 
 - una volta clonata la cartella sul proprio pc quello da fare è istallare poetry ed istallare le dipendenze creando un ambiente virtuale uguale per tutti
+
+
+- [Environment]::SetEnvironmentVariable("Path", $env:Path + ";$env:USERPROFILE\AppData\Roaming\Python\Scripts", [EnvironmentVariableTarget]::User)
+- se è in local/bin: [Environment]::SetEnvironmentVariable("Path", $env:Path + ";$env:USERPROFILE\.local\bin", [EnvironmentVariableTarget]::User)
