@@ -60,7 +60,7 @@ df["testo_pulito"] = box   # modifica df con nuova colonna testo pulito
 vectorizer = CountVectorizer()
 testo_non_vectorized = df["testo_pulito"]
 
-vectorizedtest = vectorizer.fit_transform(testo_non_vectorized) # da fare inisieme out-of-session
+vectorizedtest = vectorizer.fit_transform(testo_non_vectorized) # da fare inisieme out-of-session - fixed 
 print(testo_non_vectorized)
 print("="*50)
 print(vectorizedtest.toarray())
