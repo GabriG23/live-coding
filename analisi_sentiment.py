@@ -61,8 +61,9 @@ vectorizer = CountVectorizer()
 testo_non_vectorized = df["testo_pulito"]
 
 vectorizedtest = vectorizer.fit_transform(testo_non_vectorized) # da fare inisieme out-of-session
-
-print(vectorizedtest)
+print(testo_non_vectorized)
+print("="*50)
+print(vectorizedtest.toarray())
 
 #df["testo_vectorized"]
 
